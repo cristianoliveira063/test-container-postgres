@@ -1,8 +1,7 @@
-package br.com.test.container.it.service;
+package br.com.test.container.service;
 
 import br.com.test.container.domain.Person;
 import br.com.test.container.repository.PersonRepository;
-import br.com.test.container.service.PersonService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +18,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
 @Testcontainers
 @ActiveProfiles("test-containers")
-class PersonServiceTest {
+class PersonServiceIntegTest {
 
     @Autowired
     private PersonRepository personRepository;
